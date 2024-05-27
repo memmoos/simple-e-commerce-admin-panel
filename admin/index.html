@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HepsiŞurada.com</title>
+  <link rel="stylesheet" type="text/css" href="anaSay.css">
+  <script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome için -->
+  <style>
+    /* Ekstra stil kodları buraya gelebilir */
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="left-div">
+      <a class="menu-btn" href="zindex.html"><i class="fas fa-user"> Profil </i></a> <!-- Açılır menü butonuna ikon eklendi -->
+    </div>
+  
+    <div class="center-div">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="#about">Hakkında</a>
+      <a href="#contact">İletişim</a>
+    </div>
+    <div class="right-div">
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="urunlerDiv">
+      <!-- AJAX ile yüklenecek içerik buraya gelecek -->
+    </div>
+  </div>
+
+  <footer>
+    <!-- Üçüncü kutu için footer içeriği buraya gelecek -->
+    <p>
+      Muhammet Ali Web Page
+    </p>
+  </footer>
+
+  <script>
+    var menuBtn = document.querySelector('.menu-btn');
+    var menuContent = document.querySelector('.menu-content');
+
+    menuBtn.addEventListener('mouseenter', function() {
+      menuContent.classList.add('show');
+    });
+
+    menuContent.addEventListener('mouseleave', function() {
+      menuContent.classList.remove('show');
+    });
+  </script>
+  <script>
+    var urunlerDiv = document.getElementById('urunlerDiv');
+    var xhr = new XMLHttpRequest();
+  
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          urunlerDiv.innerHTML = xhr.responseText;
+        } else {
+          urunlerDiv.innerHTML = "İçerik yüklenirken bir hata oluştu.";
+        }
+      }
+    };
+  
+    xhr.open('GET', 'urunler.php', true);
+    xhr.send();
+  </script>
+
+</body>
+</html>

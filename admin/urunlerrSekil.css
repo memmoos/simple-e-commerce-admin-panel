@@ -1,0 +1,62 @@
+/* Renkler */
+:root {
+  --renk-arka: #f2f2f2; /* Açık gri arka plan */
+  --renk-sinir: #ccc; /* Gri sınır */
+  --renk-baslik: #333; /* Koyu gri başlık */
+  --renk-yazi: #666; /* Gri metin */
+  --renk-fiyat: #c00; /* Kırmızı fiyat */
+  --renk-golge: rgba(0, 0, 0, 0.1); /* Hafif siyah gölge */
+  --renk-golge-yuk: rgba(0, 0, 0, 0.4); /* Yoğun siyah gölge */
+}
+
+/* Ürün */
+.urun {
+  display: inline-block;
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--renk-sinir);
+  background-color: var(--renk-arka);
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.urun:hover {
+  box-shadow: 0 0 15px var(--renk-golge-yuk); /* Gölgeyi daha belirgin hale getir */
+}
+
+/* Resim konteyneri */
+.urun-resim {
+  width: 400px; /* Sabit genişlik */
+  height: 400px; /* Sabit yükseklik */
+  overflow: hidden; /* Gerektiğinde taşan kısımları gizle */
+  display: flex; /* Dikey hizalama için flex kullan */
+  justify-content: center; /* İçerikleri ortalamak için */
+  align-items: center; /* İçerikleri ortalamak için */
+}
+
+/* Resim içeriği */
+.urun-resim img {
+  width: 100%; /* Resmi kapsayıcıya tamamen sığdır */
+  height: 100%; /* Resmi kapsayıcıya tamamen sığdır */
+  object-fit: cover; /* Resmi kapsayıcıya sığdırırken oranını koru */
+}
+
+/* Ürün Detayları */
+.urun-detay {
+  margin-top: 10px;
+  color: var(--renk-yazi);
+}
+
+/* Ürün Markası */
+.urun-marka {
+  font-weight: bold;
+  color: var(--renk-baslik);
+}
+
+/* Ürün Fiyatı */
+.urun-fiyat {
+  color: var(--renk-fiyat);
+}

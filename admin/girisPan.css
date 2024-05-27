@@ -1,0 +1,90 @@
+body {
+    background: url(https://cdn.wallpapersafari.com/37/17/SbpYxm.jpg) no-repeat center center/cover, green;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    background-color: rgba(38, 38, 38, 0.52);
+    border-radius: 50px;
+    display: flex;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    margin: auto 0;
+    background: url(https://pbs.twimg.com/profile_images/1348757072125382657/nBne43Lu_400x400.jpg) no-repeat center center/cover;
+    border-radius: 50%;
+}
+
+.form-container {
+    width: 350px;
+    height: 250px;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #00ffff;
+    background-color: transparent;
+    text-align: center;
+    color: #00ffff;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.form-button, .uye-ol-button {
+    width: calc(50% - 5px); /* İki butonun genişliğini eşit olarak ayarlar ve aralarında biraz boşluk bırakır */
+    height: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-button:hover, .uye-ol-button:hover {
+    background-color: #00ffff;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.uye-ol-button {
+    margin-left: 10px; /* "Üye Ol" butonunu "Giriş Yap" butonundan biraz ayırır */
+}
+
+::placeholder {
+    color: #00ffff;
+}
