@@ -77,7 +77,7 @@ INSERT INTO `urunler` (`urunId`, `urunAdi`, `urunTuru`, `urunMark`, `urunFiyati`
 (4, 'Bilgisayar Klavyesi', 'Klavye', 'A4 Tech', 450, 2, '102 tuşlu klavye', 'dosya/97389.jpg', 'image/jpeg', '14711', '2024-05-26 14:21:38'),
 (5, 'Lcd Monitör', 'Monitör', 'BenQ', 3000, 7, 'Lcd monitör. siyah Renk', 'dosya/61732.jpg', 'image/jpeg', '14711', '2024-05-26 14:21:38'),
 (6, 'Bilgisayar Kasası', 'Desktop Kasa', 'Power Bosts', 1250, 15, 'Renkli Fanlı', 'dosya/88285.jpg', 'image/jpeg', '14711', '2024-05-26 14:21:38'),
-(7, 'Masa üstü mikrofon', 'Mikrofon', 'Snoppy', 659, 17, 'Turuncu Siyah renkli profösyönel mikrofon', 'dosya/59389.jpg', 'image/jpeg', '14711', '2024-05-26 14:21:38'),
+(7, 'Masa üstü mikrofon', 'Mikrofon', 'Snoppy', 659, 17, 'Turuncu Siyah renkli profesyonel mikrofon', 'dosya/59389.jpg', 'image/jpeg', '14711', '2024-05-26 14:21:38'),
 (11, 'telefon', 'telefon', 'iphone', 1000, 7, 'çok sağlam bir telefon', 'dosya/78620.jpg', 'image/jpeg', '14711', '2024-05-26 14:21:38'),
 (14, 'afasdfsf', 'sdfsf', 'asdfasd', 156, 45, 'asa', 'dosya/8896.jpg', 'image/jpeg', '14711', '2024-05-26 14:42:38'),
 (15, 'as', 'a', 'a', 78, 78, 'a', 'dosya/6116.jpg', 'image/jpeg', '14711', '2024-05-26 14:42:59'),
